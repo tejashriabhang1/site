@@ -22,7 +22,7 @@ String msg="";
 <%
 msg=request.getParameter("msg");
 
-String ss="";
+String palash="";
 %>
 </body>
 </html>
