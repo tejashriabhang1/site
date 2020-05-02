@@ -83,19 +83,14 @@ try{
 	</td>
 	</tr>
 	</form>
-	
-
 	<tr>
 	<td colspan="13">
 	<%
-	sql="select * from t_ftpacknowledge where StoredDateTime between '"+fromdate+" 00:00:00' and '"+todate+" 23:59:59' order by StoredDateTime desc";
-	System.out.println(sql);
-	ResultSet rst=st1.executeQuery(sql);
-	if(rst.next()== null){
-		
-	}
-	 if(!(null==request.getQueryString()))
-	{ 				
+	if(!(null==request.getQueryString()))
+	{
+		 sql="select * from t_ftpacknowledge where StoredDateTime between '"+fromdate+" 00:00:00' and '"+todate+" 23:59:59' order by StoredDateTime desc";
+		System.out.println(sql);
+				
 		//out.print(thedate+"  "+thedate1+"  "+thedate2);
 		%>
 		<table border="0" width="100%" align="center" style="border: none;">
@@ -114,9 +109,9 @@ try{
 		<td class="hed" align="center">WMSN</td>
 		</tr>
 		
+		
 		<%
-		sql="select * from t_ftpacknowledge where StoredDateTime between '"+fromdate+" 00:00:00' and '"+todate+" 23:59:59' order by StoredDateTime desc";
-		System.out.println(sql);
+		
 		ResultSet rst=st1.executeQuery(sql);
 		int i=1;
 		while(rst.next())
@@ -142,19 +137,18 @@ try{
 		<%
 		i++;
 		}
-	}
 		%>
 		  </table>
 		  </td></tr></table>
 		 
-		<%-- <%
-	}%> --%>
+		<%
+	}%>
 	</td>
 	</tr>
 	</table>
 	
 	<%
-
+	
 }catch(Exception e)
 {
 	out.print("Exceptions ----->"+e);

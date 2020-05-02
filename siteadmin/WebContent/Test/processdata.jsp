@@ -67,6 +67,18 @@ function gotoExcel(elemId, frmFldId)
 
 
 } 
+
+
+
+
+
+
+
+
+
+
+
+
 function datevalidate()
 {
 	var date1=document.getElementById("data").value;
@@ -234,10 +246,9 @@ try{
 	}
 	%>
 	
-<%@page import="java.util.Date"%>
-<form name="unitform" action="" method="get" onsubmit="return validate();">
-<table border="0" width="100%" align="center" class="sortable">
-<tr><td colspan="10" align="center" class="sorttable_nosort"><b>Please select the date and enter the Unit id to check its data.</b> </td></tr>
+<%@page import="java.util.Date"%><form name="unitform" action="" method="get" onsubmit="return validate();"><table border="0" width="100%" align="center" class="sortable">
+	
+	<tr><td colspan="10" align="center" class="sorttable_nosort"><b>Please select the date and enter the Unit id to check its data.</b> </td></tr>
 	<tr>
 	<td bgcolor="#F5F5F5">
 	<input type="text" id="data" name="data" value="<%=defaultDate %>"  size="12" readonly/>
@@ -519,5 +530,4 @@ finally
 	}
 }
 %>
-<%@ include file="footerhtml.jsp" %>
 

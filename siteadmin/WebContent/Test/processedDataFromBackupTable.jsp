@@ -1,4 +1,4 @@
-<%@ include file="headerhtml.jsp" %>
+c<%@ include file="headerhtml.jsp" %>
 
 <%
 
@@ -95,7 +95,7 @@ try{
 			vehcode=rst1.getString("VehicleCode");
 			OwnerName=rst1.getString("OwnerName");
 			VehicleRegNumber=rst1.getString("VehicleRegNumber");
-			sql="Select count(*) from db_gps.t_fuelleveldata1 where vehregno like '"+VehicleRegNumber+"'";//checking if calibrated
+			sql="Select count(*) from db_gpsbackup.t_fuelleveldata1 where vehregno like '"+VehicleRegNumber+"'";//checking if calibrated
 			rst2=st1.executeQuery(sql);
 			if(rst2.next())
 			{
@@ -174,11 +174,11 @@ try{
 		<%
 		if(flag)
 		{
-		sql="select * from db_gps.t_veh"+vehcode+" where TheFieldDataDate='"+thedate1+"' order by TheFieldDataTime desc "+limit;
+		sql="select * from db_gpsbackup.t_veh"+vehcode+" where TheFieldDataDate='"+thedate1+"' order by TheFieldDataTime desc "+limit;
 		}
 		else
 		{
-			sql="select * from db_gps.t_veh0 where TheFieldDataDate='"+thedate1+"' and unitid='"+unitid+"' order by TheFieldDataTime desc "+limit;
+			sql="select * from db_gpsbackup.t_veh0 where TheFieldDataDate='"+thedate1+"' and unitid='"+unitid+"' order by TheFieldDataTime desc "+limit;
 		}
 		ResultSet rst=st1.executeQuery(sql);
 		int i=1;

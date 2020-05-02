@@ -9,15 +9,15 @@ String MM_dbConn_USERNAME="fleetview";
 String MM_dbConn_PASSWORD="1@flv";
 */
 //String MM_dbConn_STRING="jdbc:mysql://192.168.1.49/db_gps";
-//String MM_dbConn_STRING="jdbc:mysql://10.0.10.62/db_gps";
-//String MM_dbConn_STRING1="jdbc:mysql://10.0.10.62/db_gpsExceptions";
+//String MM_dbConn_STRING="jdbc:mysql://173.234.153.82/db_gps";
+//String MM_dbConn_STRING1="jdbc:mysql://173.234.153.82/db_gpsExceptions";
 
-String MM_dbConn_STRING="jdbc:mysql://10.0.10.62/db_gps";
-String MM_dbConn_STRING1="jdbc:mysql://10.0.10.62/db_gpsExceptions";
+String MM_dbConn_STRING="jdbc:mysql://173.234.153.82/db_gps";
+String MM_dbConn_STRING1="jdbc:mysql://173.234.153.82/db_gpsExceptions";
 
 /*
-String MM_dbConn_STRING="jdbc:mysql://10.0.10.62/db_gps";
-String MM_dbConn_STRING1="jdbc:mysql://10.0.10.62/db_gpsExceptions";
+String MM_dbConn_STRING="jdbc:mysql://173.234.153.82/db_gps";
+String MM_dbConn_STRING1="jdbc:mysql://173.234.153.82/db_gpsExceptions";
 */
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------

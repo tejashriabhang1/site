@@ -194,7 +194,6 @@ try{
 		<td class="hed" align="center">Calibration Ltr. Default Value</td>
 		</tr>
 		<%
-		System.out.print("hello world");
 		if(flag)
 		{
 			sql="select * from t_veh"+vehcode+" where TheFieldDataDate>='"+thedate1+"' and TheFieldDataDate<='"+thedate3+"' and TheFiledTextFileName='JD' order by TheFieldDataTime desc "+limit;
@@ -206,7 +205,6 @@ try{
 		//	out.println(sql);
 		}
 		ResultSet rst=st1.executeQuery(sql);
-		System.out.println(sql);
 		int i=1;
 		while(rst.next())
 		{

@@ -8,7 +8,6 @@ BODY {
   color: #000000;
   margin: 0px;
 }
-
 .bodyText {
 	PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #333333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
 }
@@ -476,15 +475,13 @@ text-align: center;
 border: 1px #808080 solid;}
 
 table.stats td.hed
-{
-background-color: #DCDCDC;
+{background-color: #DCDCDC;
 color: #696969;
 padding: 4px;
 text-align: center;
 border-bottom: 2px #808080 solid;
 font-size: 12px;
-font-weight: bold;
-} 
+font-weight: bold;} 
 
 table.stats td.hed1
 {background-color: #EEEEEE;
@@ -505,21 +502,17 @@ width: 100%;
 background-color: #666;
 border: 0px;
 border-collapse: collapse;
-border-spacing: 0px;
-}
+border-spacing: 0px;}
 
 table.sortable td
-{
-background-color: #F8F8FF;
+{background-color: #F8F8FF;
 color: #000;
 padding: 4px;
 text-align: center;
-border: 1px #808080 solid;
-}
+border: 1px #808080 solid;}
 
 table.sortable td.hed
-{
-background-color: #DCDCDC;
+{background-color: #DCDCDC;
 color: #696969;
 padding: 4px;
 text-align: center;
@@ -528,13 +521,10 @@ font-size: 12px;
 font-weight: bold;} 
 
 table.sortable td.hed1
-{
-background-color: #EEEEEE;
+{background-color: #EEEEEE;
 color: #696969;
 padding: 4px;
 text-align: center;
 border-bottom: 2px #808080 solid;
 font-size: 12px;
-font-weight: bold;
-}
- 
+font-weight: bold;} 

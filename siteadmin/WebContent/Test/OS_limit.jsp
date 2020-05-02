@@ -25,15 +25,14 @@ Enter the Unit ID for the vehicle and OS1, OS2, OS values.
 <tr>
 <td bgcolor="#f5f5f5"><font size="2">OS Limits :</font></td>
 <td bgcolor="#f5f5f5">
-<font size="2">OS:</font>
-<input type="text" name="os3" id="os3" size="15" value="">
-&nbsp;&nbsp;
 <font size="2">OS1:</font>
 <input type="text" name="os1" id="os1" size="15" value="">
 &nbsp;&nbsp; 
 <font size="2">OS2:</font>
 <input type="text" name="os2" id="os2" size="15" value="">
-
+&nbsp;&nbsp;
+<font size="2">OS:</font>
+<input type="text" name="os3" id="os3" size="15" value="">
 
 <br><br>
 </td>

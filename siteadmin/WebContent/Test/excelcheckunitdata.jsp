@@ -16,8 +16,8 @@ String filename="UnitData.xls";
 String MM_dbConn_DRIVER="org.gjt.mm.mysql.Driver";
 String MM_dbConn_USERNAME="site";
 String MM_dbConn_PASSWORD="1@s2te";
-String MM_dbConn_STRING="jdbc:mysql://10.0.10.62/db_gps";
-String MM_dbConn_STRING1="jdbc:mysql://10.0.10.62/db_avlalldata";
+String MM_dbConn_STRING="jdbc:mysql://103.241.181.36/db_gps";
+String MM_dbConn_STRING1="jdbc:mysql://103.241.181.36/db_avlalldata";
 
 Connection conn,conn1;
 Statement st, st1;
@@ -69,6 +69,8 @@ try{
 		%>
 		<tr>
 		<td  align="center">Sr.</td>
+		<td  align="center">StoredDate</td>
+		
 		<td  align="center">StoredTime</td>
 		<td  align="center">Vehicle No</td>
 		<td  align="center">Vehicle Code</td>
@@ -80,11 +82,11 @@ try{
 		<%
 		if(diff>=0)
 		{
-			sql="SELECT StoredTime,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom  FROM t_ip"+thedate2+"  where Unitid='"+unitid+"' UNION select StoredTime,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom from t_ip"+thedate2+"Processed where Unitid='"+unitid+"' order by storedtime desc "+limit;	
+			sql="SELECT StoredTime,StoredDate,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom  FROM t_ip"+thedate2+"  where Unitid='"+unitid+"' UNION select StoredTime,StoredDate,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom from t_ip"+thedate2+"Processed where Unitid='"+unitid+"' order by StoredDate desc ,StoredTime  desc "+limit;	
 		}
 		else
 		{
-			sql="SELECT StoredTime,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom FROM t_mails"+thedate2+"  where Unitid='"+unitid+"'  UNION select StoredTime,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom from t_mails"+thedate2+"Processed where Unitid='"+unitid+"' order by storedtime desc "+limit;
+			sql="SELECT StoredTime,StoredDate,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom FROM t_mails"+thedate2+"  where Unitid='"+unitid+"'  UNION select StoredTime,StoredDate,VehRegNo,Vehid,Transporter,Body,UnProcessedStamps,MailFrom from t_mails"+thedate2+"Processed where Unitid='"+unitid+"' order by StoredDate desc ,StoredTime  desc "+limit;
 		}
 		ResultSet rst=st1.executeQuery(sql);
 		int i=1;
@@ -93,6 +95,8 @@ try{
 		%>
 			<tr>
 			<td  align="center"><%=i %></td>
+						<td  align="left"><%=rst.getString("StoredDate") %></td>
+			
 			<td  align="center"><%=rst.getTime("StoredTime") %></td>
 			<td  align="left"><%=rst.getString("VehRegNo") %></td>
 			<td  align="right"><%=rst.getString("Vehid") %></td>

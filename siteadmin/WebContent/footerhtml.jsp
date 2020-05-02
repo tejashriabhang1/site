@@ -34,5 +34,5 @@
 </table>
 
 <div style="font-size: 0.8em; text-align: center; margin-top: 1.0em; margin-bottom: 1.0em;">
-Copyright &copy; by Transworld Compressor Technologies Ltd. All Rights Reserved.</div>
+Copyright &copy; 2009 by Transworld Compressor Technologies Ltd. All Rights Reserved.</div>
 </body></html>

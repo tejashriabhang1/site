@@ -21,6 +21,8 @@ String msg="";
 %>
 <%
 msg=request.getParameter("msg");
+
+String ss="";
 %>
 </body>
 </html>
